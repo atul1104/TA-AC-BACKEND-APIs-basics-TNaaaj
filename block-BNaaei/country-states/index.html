@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Add a Country</h1>
+      <hr />
+
+      <form action="http://localhost:3000/country" method="POST">
+        <div class="form-group">
+          <label for="name">Name of Country</label>
+          <input type="text" id="name" class="form-control" name="name" />
+        </div>
+
+        <div class="form-group">
+          <label for="states">Name of States</label>
+          <input type="text" id="states" class="form-control" name="states" />
+        </div>
+
+        <div class="form-group">
+          <label for="continent">Continent</label>
+          <input
+            type="text"
+            id="continent"
+            class="form-control"
+            name="continent"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="population">Population</label>
+          <input
+            id="population"
+            type="number"
+            class="form-control"
+            name="population"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="religions">Religions</label>
+          <input
+            type="text"
+            id="religions"
+            class="form-control"
+            name="ethinicity"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="neighbour">Neighbouring Countries</label>
+          <input
+            type="text"
+            id="neighbour"
+            class="form-control"
+            name="neighbouring_countries"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="area">Area</label>
+          <input id="area" type="number" class="form-control" name="area" />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
